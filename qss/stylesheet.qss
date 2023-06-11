@@ -1,0 +1,195 @@
+﻿QWidget{
+  color: #222;
+  background-color: #EEEEEE;
+}
+
+QPushButton {
+    border: 0px solid;
+    border-radius: 5px;
+    background-color: #E0E0E0;
+    /*padding: 1px 4px;*/
+    /*min-width: 50px;*/
+    /*min-height: 16px;*/
+}
+
+QPushButton:hover{
+    border-width: 0px;
+    border-color: #8360c3;
+    background-color: #F3E5F5;
+    /*border-color: $pressed;*/
+}
+
+QPushButton:pressed
+{
+    border-width: 0px;
+    border-color: #8360c3;
+    background-color: #CE93D8;
+    color: #FFFFFF; /* 设置列表项的文字颜色为蓝色 */
+    /*border-color: $border;*/
+}
+
+QPushButton:focus, QPushButton:default {
+    /*border-color: $focused;*/ /* make the default button prominent */
+}
+
+QToolButton {
+  border: 0px solid #8f8f91;
+  border-radius: 6px;
+  background-color: #EDE7F6;
+}
+
+QToolButton[popupMode="1"] {
+  padding-right: 20px;
+}
+
+QToolButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #654ea3, stop: 1 #eaafc8);
+}
+
+QToolButton:checked {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #654ea3, stop: 1 #eaafc8);
+}
+
+/******************** [QListWidget] ******************/
+
+QListWidget {
+  border: 1px solid #c0c0c0; /* 设置列表部件的边框为1像素的实线，颜色为灰色 */
+  border-radius: 6px;
+  background-color: #ffffff; /* 设置列表部件的背景颜色为白色 */
+  outline: none; /* 设置列表部件的焦点样式为无 */
+}
+
+QListWidget::item {
+  border-radius: 6px;
+  padding: 3px; /* 设置列表项的内边距为5像素 */
+  color: #333333; /* 设置列表项的文本颜色为黑色 */
+}
+
+QListWidget::item:selected {
+  background-color: #90CAF9; /* 设置列表项在选中状态下的背景颜色为天蓝色 */
+}
+
+QListWidget::item:hover {
+  background-color: #E1F5FE; /* 设置列表项在悬停状态下的背景颜色为浅蓝色 */
+}
+
+QListWidgetItem {
+  font: bold 14px Arial; /* 设置列表项的字体为粗体，大小为14像素，字体为Arial */
+  color: #333333; /* 设置列表项的文字颜色为蓝色 */
+}
+
+/******************** [QTabWidget] ******************/
+
+QTabWidget {
+  border: 1px solid #c0c0c0; /* 设置标签部件的边框为1像素的实线，颜色为灰色 */
+  background-color: #f0f0f0; /* 设置标签部件的背景颜色为浅灰色 */
+}
+
+QTabWidget::pane {
+  border: 1px solid #c0c0c0; /* 设置标签页的边框为1像素的实线，颜色为灰色 */
+  background-color: #ffffff; /* 设置标签页的背景颜色为白色 */
+}
+
+QTabWidget::tab-bar {
+  left: 0px; /* 设置标签栏的左边距为5像素 */
+  background-color: #333333;
+}
+
+QTabBar::tab {
+  padding: 0px; /* 设置标签的内边距为5像素 */
+  border: 1px solid #c0c0c0; /* 设置标签的边框为1像素的实线，颜色为灰色 */
+  border-bottom-color: #ffffff; /* 设置标签的底部边框颜色为白色 */
+  border-top-left-radius: 5px; /* 设置标签的左上角圆角为10像素 */
+  border-top-right-radius: 5px; /* 设置标签的右上角圆角为10像素 */
+  background-color: #F3E5F5;
+  width: 75px; /* 设置标签的宽度为80像素 */
+}
+
+QTabBar::tab:selected {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #eaafc8, stop: 1 #654ea3); /* 设置标签在悬停状态下的背景颜色为浅蓝色 */
+}
+
+QTabBar::tab:hover {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #eaafc8, stop: 1 #654ea3); /* 设置标签在悬停状态下的背景颜色为浅蓝色 */
+}
+
+/******************** [QTableWidget] ******************/
+
+QTableWidget {
+  border: 0px solid #c0c0c0; /* 设置表格部件的边框为1像素的实线，颜色为灰色 */
+  border-radius: 10px;
+  background-color: #ffffff; /* 设置表格部件的背景颜色为白色 */
+  outline: none; /* 设置列表部件的焦点样式为无 */
+}
+
+QTableWidget::item {
+  padding: 0px; /* 设置表格项的内边距为5像素 */
+  border-radius: 5px;
+}
+
+QTableWidget::item:selected {
+  background-color: #F3E5F5; /* 设置表格项在选中状态下的背景颜色为天蓝色 */
+}
+
+QTableWidget::item:hover {
+  background-color: #F3E5F5; /* 设置表格项在悬停状态下的背景颜色为浅蓝色 */
+}
+
+QTableWidget::item:focus {
+  border: 1px solid #E1BEE7; /* 设置表格项在焦点状态下的边框为2像素的实线，颜色为蓝色 */
+}
+
+QHeaderView::section {
+  border: 1px solid #c0c0c0; /* 设置表头部分的边框为1像素的实线，颜色为灰色 */
+  /*border-top-left-radius: 5px;*/ /* 设置标签的左上角圆角为10像素 */
+  /*border-top-right-radius: 5px;*/ /* 设置标签的右上角圆角为10像素 */
+  background-color: #333333; /* 设置表头部分的背景颜色为浅灰色 */
+  color: #F57C00;
+}
+
+QScrollBar:vertical {
+  border: none; /* 设置垂直滚动条的边框为无 */
+  background-color: #f0f0f0; /* 设置垂直滚动条的背景颜色为浅灰色 */
+  width: 10px; /* 设置垂直滚动条的宽度为10像素 */
+}
+
+QScrollBar::handle:vertical {
+  border-radius: 5px; /* 设置垂直滚动条手柄的边框圆角为5像素 */
+  background-color: #c0c0c0; /* 设置垂直滚动条手柄的背景颜色为灰色 */
+}
+
+QScrollBar::add-line:vertical {
+  height: 0px; /* 设置垂直滚动条增加按钮的高度为0像素，即隐藏 */
+}
+
+QScrollBar::sub-line:vertical {
+  height: 0px; /* 设置垂直滚动条减少按钮的高度为0像素，即隐藏 */
+}
+
+QScrollBar:horizontal {
+  border: none; /* 设置水平滚动条的边框为无 */
+  background-color: #f0f0f0; /* 设置水平滚动条的背景颜色为浅灰色 */
+  height: 10px; /* 设置水平滚动条的高度为10像素 */
+}
+
+QScrollBar::handle:horizontal {
+  border-radius: 5px; /* 设置水平滚动条手柄的边框圆角为5像素 */
+  background-color: #c0c0c0; /* 设置水平滚动条手柄的背景颜色为灰色 */
+}
+
+QScrollBar::add-line:horizontal {
+  width: 0px; /* 设置水平滚动条增加按钮的宽度为0像素，即隐藏 */
+}
+
+QScrollBar::sub-line:horizontal {
+  width: 0px; /* 设置水平滚动条减少按钮的宽度为0像素，即隐藏 */
+}
+
+QTableCornerButton::section {
+  background-color: #333333; /* 设置左上角的格子的背景颜色为浅灰色 */
+}
+
+QTableWidget::item:alternate {
+  background-color: #CE93D8; /* 设置表格项的交替背景颜色为浅灰色 */
+}
+
