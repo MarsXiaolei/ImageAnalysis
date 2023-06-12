@@ -34,7 +34,8 @@ HEADERS += \
         widget.h \
     DeviceManageForm.h \
     SetAcquireParamForm.h \
-    SpectralAnalysisForm.h
+    SpectralAnalysisForm.h \
+    Global.h
 
 FORMS += \
         widget.ui \

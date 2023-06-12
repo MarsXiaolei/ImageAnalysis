@@ -10,6 +10,7 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
+    setWindowTitle(APP_TITLE);
     DeviceManageForm *deviceManageForm = new DeviceManageForm(ui->stackedWidget);
     ui->stackedWidget->addWidget(deviceManageForm);
     SetAcquireParamForm *setAcquireParamForm = new SetAcquireParamForm(ui->stackedWidget);
